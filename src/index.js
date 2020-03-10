@@ -8,9 +8,10 @@ import Student_Composite from "./CompositeComponent";
 import el10 from "./Understanding_JSX";
 import Patient from "./UnderstandingProps";
 import Understanding_State from "./UnderstandingState";
-import EventHandler_Class from "./Understanding_EventHandler"
-import EventHandler_WithArgs from "./Understanding_EventHandler"
-import SetState_Class from "./SettingState"
+// import EventHandler_Class from "./Understanding_EventHandler";
+import EventHandler_WithArgs from "./Understanding_EventHandler";
+import SetState_Class from "./SettingState";
+import AppMount from "./Understanding_Mounting";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -45,3 +46,5 @@ ReactDOM.render(<Understanding_State age={34} />, document.getElementById("Under
 ReactDOM.render(<EventHandler_WithArgs />, document.getElementById("Understanding_EventHandlers"))
 
 ReactDOM.render(<SetState_Class name="Manish" age={32} />, document.getElementById("setState_div"))
+
+ReactDOM.render(<AppMount name="Manish" age={32} />, document.getElementById("mount_div"))
