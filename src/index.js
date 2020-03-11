@@ -14,6 +14,7 @@ import SetState_Class from "./SettingState";
 import AppMount from "./Understanding_Mounting";
 import Understanding_Update from "./Understanding_Update"
 import UnderstandingUnmounting from "./UnderstandingUnmounting";
+import HookExample from "./UnderstandingHooks";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -45,13 +46,16 @@ ReactDOM.render(<Patient doctor="A K Gupta" age={45} />, document.getElementById
 // Renderding Class Component state
 ReactDOM.render(<Understanding_State age={34} />, document.getElementById("Understanding_State"));
 
-ReactDOM.render(<EventHandler_WithArgs />, document.getElementById("Understanding_EventHandlers"))
+ReactDOM.render(<EventHandler_WithArgs />, document.getElementById("Understanding_EventHandlers"));
 
-ReactDOM.render(<SetState_Class name="Manish" age={32} />, document.getElementById("setState_div"))
+ReactDOM.render(<SetState_Class name="Manish" age={32} />, document.getElementById("setState_div"));
 
-ReactDOM.render(<AppMount name="Manish" age={32} />, document.getElementById("mount_div"))
+ReactDOM.render(<AppMount name="Manish" age={32} />, document.getElementById("mount_div"));
 
 ReactDOM.render(<Understanding_Update name="Manish" marks={79} />, document.getElementById("update_div"))
 
-ReactDOM.render(<UnderstandingUnmounting name="Manish" marks={79} />, document.getElementById("unmount_div"))
-ReactDOM.unmountComponentAtNode(document.getElementById("unmount_div"))
+ReactDOM.render(<UnderstandingUnmounting name="Manish" marks={79} />, document.getElementById("unmount_div"));
+
+ReactDOM.unmountComponentAtNode(document.getElementById("unmount_div"));
+
+ReactDOM.render(<HookExample />, document.getElementById("hooks_div"));
