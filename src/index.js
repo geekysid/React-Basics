@@ -15,6 +15,8 @@ import AppMount from "./Understanding_Mounting";
 import Understanding_Update from "./Understanding_Update"
 import UnderstandingUnmounting from "./UnderstandingUnmounting";
 import HookExample from "./UnderstandingHooks";
+import FetchData from "./UnderstandingHooks2";
+import UnderstandingHooksContext2 from "./UnderstandingHooks_context2";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -59,3 +61,5 @@ ReactDOM.render(<UnderstandingUnmounting name="Manish" marks={79} />, document.g
 ReactDOM.unmountComponentAtNode(document.getElementById("unmount_div"));
 
 ReactDOM.render(<HookExample />, document.getElementById("hooks_div"));
+ReactDOM.render(<FetchData />, document.getElementById("hooks_fetch_div"));
+ReactDOM.render(<UnderstandingHooksContext2 />, document.getElementById("hooks_context_div"));

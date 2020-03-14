@@ -49,9 +49,9 @@ function HookExample(){
     // creating couple of states
     const [name, setName] = useState("Siddhant");
     const [marks, setMarks] = useState(65);
-    //object state
+    // object state
     const [fullName, setFullName] = useState({fname: "Siddhant", lname: "Shah"})
-    //  array state
+    // array state
     const [numbers, setNumbers] = useState([])
 
     // event handler to change value of name state
