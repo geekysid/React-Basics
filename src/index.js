@@ -17,6 +17,8 @@ import UnderstandingUnmounting from "./UnderstandingUnmounting";
 import HookExample from "./UnderstandingHooks";
 import FetchData from "./UnderstandingHooks2";
 import UnderstandingHooksContext2 from "./UnderstandingHooks_context2";
+import ConditonalsClass from "./Conditionals";
+import ComponentList2 from "./UnderstandingList";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -60,6 +62,10 @@ ReactDOM.render(<UnderstandingUnmounting name="Manish" marks={79} />, document.g
 
 ReactDOM.unmountComponentAtNode(document.getElementById("unmount_div"));
 
-ReactDOM.render(<HookExample />, document.getElementById("hooks_div"));
-ReactDOM.render(<FetchData />, document.getElementById("hooks_fetch_div"));
-ReactDOM.render(<UnderstandingHooksContext2 />, document.getElementById("hooks_context_div"));
+// ReactDOM.render(<HookExample />, document.getElementById("hooks_div"));
+// ReactDOM.render(<FetchData />, document.getElementById("hooks_fetch_div"));
+// ReactDOM.render(<UnderstandingHooksContext2 />, document.getElementById("hooks_context_div"));
+
+ReactDOM.render(<ConditonalsClass isLoggedIn={false} name="" />, document.getElementById("conditional_div"));
+
+ReactDOM.render(<ComponentList2 />, document.getElementById("list_div"));
