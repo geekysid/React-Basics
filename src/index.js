@@ -19,6 +19,11 @@ import FetchData from "./UnderstandingHooks2";
 import UnderstandingHooksContext2 from "./UnderstandingHooks_context2";
 import ConditonalsClass from "./Conditionals";
 import ComponentList2 from "./UnderstandingList";
+import StyleInlineFunction from "./Style_Inline";
+import StyleExternalFunction from "./Style_External";
+import StyleModuleFunction from "./Style_Module";
+import ImagesAssets from "./ImagesAssets";
+import UnderstandingFormsUncontrolled from "./UnderstandingForms_Uncontrolled";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -69,3 +74,11 @@ ReactDOM.unmountComponentAtNode(document.getElementById("unmount_div"));
 ReactDOM.render(<ConditonalsClass isLoggedIn={false} name="" />, document.getElementById("conditional_div"));
 
 ReactDOM.render(<ComponentList2 />, document.getElementById("list_div"));
+
+ReactDOM.render(<StyleInlineFunction />, document.getElementById("style_inline_div"));
+ReactDOM.render(<StyleExternalFunction />, document.getElementById("style_external_div"));
+ReactDOM.render(<StyleModuleFunction />, document.getElementById("style_module_div"));
+
+ReactDOM.render(<ImagesAssets />, document.getElementById("image_div"));
+
+ReactDOM.render(<UnderstandingFormsUncontrolled />, document.getElementById("form_div"));
