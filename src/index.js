@@ -24,6 +24,7 @@ import StyleExternalFunction from "./Style_External";
 import StyleModuleFunction from "./Style_Module";
 import ImagesAssets from "./ImagesAssets";
 import UnderstandingFormsUncontrolled from "./UnderstandingForms_Uncontrolled";
+import ComponentA from "./ContextAPI/ComponentA";
 
 // rendering output with JSX
 let element = <h3>Rendering output with JSX using ELEMENT</h3>;
@@ -82,3 +83,5 @@ ReactDOM.render(<StyleModuleFunction />, document.getElementById("style_module_d
 ReactDOM.render(<ImagesAssets />, document.getElementById("image_div"));
 
 ReactDOM.render(<UnderstandingFormsUncontrolled />, document.getElementById("form_div"));
+
+ReactDOM.render(<ComponentA name="Siddhant" age={33} />, document.getElementById("contextAPI_div"));
